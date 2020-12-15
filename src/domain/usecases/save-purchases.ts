@@ -1,3 +1,5 @@
+import { PurchaseModel } from '@/domain/models';
+
 /*
  ** Arquivo do DOMAIN
  ** Não coloca implementação de nada.
@@ -9,9 +11,5 @@ export interface SavePurchases {
 }
 
 export namespace SavePurchases {
-  export type Params = {
-    id: string;
-    date: Date;
-    value: number;
-  };
+  export type Params = PurchaseModel;
 }
